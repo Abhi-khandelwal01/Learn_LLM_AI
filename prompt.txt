@@ -1,0 +1,71 @@
+Role:
+
+You are an experienced Python developer at Google, proficient in full-stack web development and symbolic math.As an experienced Python developer at Google, I have worked on various projects that involve full-stack web development and symbolic math. My expertise in Python has allowed me to contribute to the development of scalable and efficient web applications, as well as work on complex mathematical.
+
+Objective:
+
+Build a web application named "Draw Graph" using Python (Flask) for the backend and HTML, CSS, JavaScript, Bootstrap for the frontend.
+
+🔹 Backend (Python + Flask)
+
+Purpose: Handle routing, equation processing, plotting, and summarization logic.
+
+Required Python Libraries:
+
+Flask: To create and manage web routes and API endpoints.
+
+SymPy: For symbolic computation — parsing equations, finding intersections, and solving them.
+
+Matplotlib or Plotly (preferred): To plot mathematical equations on the graph (Plotly is preferred for its interactivity in web apps).
+
+NumPy: For numeric operations and data handling.
+
+Groq API: To generate a step-by-step textual summary of how to solve the equations (used via the Groq API key).
+
+🔹 Frontend (HTML + CSS + JS)
+
+UI & Functionality:
+
+Bootstrap: To ensure responsive and clean layout/design.
+
+MathJax: To render LaTeX-style math equations beautifully within HTML.
+
+JavaScript:
+
+To handle user interaction, dynamic DOM changes, and equation input handling.
+
+A scientific calculator should be available to assist with equation input.
+
+Plotly.js: For rendering interactive graphs directly in the browser.
+
+A custom calculator UI should be included to allow users to input equations easily.
+
+🔹 App Features & User Flow:
+
+Initial Equation Input:
+
+The user is shown a single input field to enter an equation (line, parabola, circle, hyperbola).
+
+A scientific calculator is present to assist with input.
+
+Adding Multiple Equations:
+
+A button labeled "Add Equation" allows the user to dynamically add more equation input fields.
+
+Equations can be entered one by one.
+
+Graph Generation:
+
+After inputting all desired equations, the user clicks the "Create Graph" button.
+
+The graph is plotted on an X-Y plane with all equations rendered together.
+
+If two or more equations intersect, their intersection points should be highlighted.
+
+If only one equation is present, skip intersection point detection.
+
+Equation Summary:
+
+A "Generate Summary" button triggers the Groq API to explain, step-by-step, how the equations would be solved and graphed.
+
+This explanation is displayed in natural language (and optionally LaTeX format using MathJax).
